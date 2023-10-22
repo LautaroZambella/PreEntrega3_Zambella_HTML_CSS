@@ -1,0 +1,25 @@
+// header {
+//     nav {
+//         list-style: none;
+//         display: flex;
+//     }
+//     background-color: $bg_ppl;
+// }
+
+// main div {
+//     color: nth($colores, 2 );
+// }
+
+// h2 {
+//     font-size: map-get($titulos, titulo );
+//     text-decoration: map-get($titulos, decoracion);
+// }
+
+// footer div {
+//     @extend %disposicion;
+// }
+
+// header div {
+//     @include pieDePagina(yellow,10px,20px);
+// }
+
