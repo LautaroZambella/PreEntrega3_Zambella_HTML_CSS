@@ -14,5 +14,19 @@ header {
   }
   h1 {
     text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 992px) {
+    .nav_media {
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    ul {
+        display: none;
+    }
   }
 }
