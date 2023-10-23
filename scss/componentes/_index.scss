@@ -23,3 +23,62 @@
 //     @include pieDePagina(yellow,10px,20px);
 // }
 
+main {
+    background-color: #ffc15e;
+
+    .imageLink {
+        &:hover {
+            transform: scale(1.05);
+        }
+        transition: transform 0.5s;
+    }
+
+    img {
+        border-radius: 8px;
+    }
+
+    p {
+        font-size: 22px;
+         font-family: "Montserrat", sans-serif;
+    }
+
+    .indexLibro {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 20px 50px 10px;
+      }
+
+      .parrafoLibro {
+        width: 800px;
+        justify-self: center;
+      }
+
+      .toCenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+
+        h2 {
+            align-self: flex-start;
+        }
+      }
+
+      .slider {
+        max-width: 415px;
+      }
+
+      @media (max-width: 420px) {
+        .slider {
+          max-width: 300px;
+        }
+      
+        .imageLink {
+          width: 250px;
+        }
+    }
+}
