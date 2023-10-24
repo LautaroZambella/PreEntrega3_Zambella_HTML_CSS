@@ -24,7 +24,7 @@
 // }
 
 main {
-    background-color: #ffc15e;
+    // background-color: #ffc15e;
 
     .imageLink {
         &:hover {
@@ -84,7 +84,7 @@ main {
 }
 
 section {
-    background-color: #ffc15e;
+    background-color: $bg_ppl;
     display: flex;
     justify-content: flex-end;
     align-items: center;

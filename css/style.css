@@ -50,9 +50,6 @@ header h1 {
     transform: translateY(0px);
   }
 }
-main {
-  background-color: #ffc15e;
-}
 main .imageLink {
   transition: transform 0.5s;
 }
@@ -127,9 +124,32 @@ section p {
   }
 }
 
+body p {
+  margin: 0;
+}
+body #libros div {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  body #libros div {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  body #libros img {
+    width: 250px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+* body {
+  background-color: #ffc15e;
 }
 
 ul {
