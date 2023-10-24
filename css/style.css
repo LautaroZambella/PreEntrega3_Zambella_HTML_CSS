@@ -39,6 +39,17 @@ header h1 {
   }
 }
 
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 main {
   background-color: #ffc15e;
 }
@@ -86,6 +97,33 @@ main .slider {
   }
   main .imageLink {
     width: 250px;
+  }
+}
+
+section {
+  background-color: #ffc15e;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section img {
+  padding: 50px;
+  animation-name: upAndDown;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+section p {
+  font-size: 22px;
+  font-family: "Rubik", sans-serif;
+  padding: 50px;
+}
+@media (max-width: 992px) {
+  section .animated {
+    display: none;
   }
 }
 
