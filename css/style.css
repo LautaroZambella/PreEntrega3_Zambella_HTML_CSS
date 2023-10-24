@@ -144,6 +144,175 @@ body #libros div {
   }
 }
 
+#autores .brandon img {
+  grid-area: img;
+}
+#autores .brandon .info {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autores .brandon .libros {
+  grid-area: libros;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .brandon .sagas {
+  grid-area: sagas;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .brandon .wiki {
+  grid-area: wiki;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .agatha img {
+  grid-area: img;
+}
+#autores .agatha .info {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autores .agatha .libros {
+  grid-area: libros;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .agatha .sagas {
+  grid-area: sagas;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .agatha .wiki {
+  grid-area: wiki;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .robert img {
+  grid-area: img;
+}
+#autores .robert .info {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autores .robert .libros {
+  grid-area: libros;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .robert .sagas {
+  grid-area: sagas;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .robert .wiki {
+  grid-area: wiki;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .juan img {
+  grid-area: img;
+}
+#autores .juan .info {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autores .juan .libros {
+  grid-area: libros;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .juan .sagas {
+  grid-area: sagas;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#autores .juan .wiki {
+  grid-area: wiki;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+@media (min-width: 992px) {
+  #autores .brandon,
+  #autores .agatha,
+  #autores .robert,
+  #autores .juan {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-areas: "img txt txt txt" "img quote quote quote" "img libros sagas wiki";
+    gap: 10px;
+    padding: 20px;
+  }
+  #autores .quote {
+    grid-area: quote;
+    font-style: italic;
+    color: #2f4f4f;
+  }
+}
+@media (max-width: 992px) {
+  #autores .brandon,
+  #autores .agatha,
+  #autores .robert,
+  #autores .juan {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 0.3fr;
+    grid-template-areas: "img txt txt" "libros sagas wiki";
+    gap: 10px;
+    padding: 20px;
+  }
+  #autores .quote {
+    display: none;
+  }
+  #autores img {
+    width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  #autores .brandon,
+  #autores .agatha,
+  #autores .robert,
+  #autores .juan {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-direction: column;
+  }
+  #autores .brandon .info,
+  #autores .agatha .info,
+  #autores .robert .info,
+  #autores .juan .info {
+    display: none;
+  }
+  #autores .brandon img,
+  #autores .agatha img,
+  #autores .robert img,
+  #autores .juan img {
+    width: 300px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
