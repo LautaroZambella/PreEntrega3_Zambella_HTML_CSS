@@ -6,7 +6,7 @@
       "cosmere disco"
       "holmes potter";
     gap: 20px;
-    padding: 20px;
+    padding: 20px 20px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -51,6 +51,5 @@
         img {
             width: 300px;
         }
-
       }
 }
