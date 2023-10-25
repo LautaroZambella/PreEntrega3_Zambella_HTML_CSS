@@ -15,7 +15,7 @@ body {
     @media (max-width: 992px) {
         #libros {
             div {
-                flex-wrap: wrap;
+                flex-wrap: map-get($flexado, flexibilidad);
             }
         }
     }

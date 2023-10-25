@@ -1,17 +1,10 @@
 #sagas {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
-    grid-template-areas:
-      "cosmere disco"
-      "holmes potter";
     gap: 20px;
     padding: 20px 20px 40px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: map-get($flexado, flexibilidad);
     justify-content: space-evenly;
     .cosmere {
-        grid-area: cosmere;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -19,7 +12,6 @@
         align-items: center;
       }
       .disco {
-        grid-area: disco;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -28,7 +20,6 @@
       }
       
       .holmes {
-        grid-area: holmes;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -37,7 +28,6 @@
       }
       
       .potter {
-        grid-area: potter;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

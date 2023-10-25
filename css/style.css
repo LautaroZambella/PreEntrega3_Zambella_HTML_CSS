@@ -314,10 +314,6 @@ body #libros div {
 }
 
 #sagas {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
-  grid-template-areas: "cosmere disco" "holmes potter";
   gap: 20px;
   padding: 20px 20px 40px;
   display: flex;
@@ -325,7 +321,6 @@ body #libros div {
   justify-content: space-evenly;
 }
 #sagas .cosmere {
-  grid-area: cosmere;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -333,7 +328,6 @@ body #libros div {
   align-items: center;
 }
 #sagas .disco {
-  grid-area: disco;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -341,7 +335,6 @@ body #libros div {
   align-items: center;
 }
 #sagas .holmes {
-  grid-area: holmes;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -349,7 +342,6 @@ body #libros div {
   align-items: center;
 }
 #sagas .potter {
-  grid-area: potter;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -375,7 +367,7 @@ body #libros div {
   align-items: center;
 }
 #caminoReyes .infoLibro p {
-  width: 25%;
+  width: 35%;
 }
 #caminoReyes .generoRating {
   display: flex;

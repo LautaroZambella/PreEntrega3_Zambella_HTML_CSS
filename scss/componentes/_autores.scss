@@ -180,9 +180,9 @@
             .robert,
             .juan {
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: map-get($flexado, flexibilidad);
                 padding: 0;
-                flex-direction: column;
+                flex-direction: map-get($flexado, direccion);
 
                 .info {
                     display: none;
